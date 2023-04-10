@@ -1,6 +1,7 @@
 
 const initialState = {
-    restaurants: []
+    restaurants: [],
+    menuList:[]
 }
 
 const getReducer = (state=initialState, action) =>{
@@ -8,6 +9,8 @@ const getReducer = (state=initialState, action) =>{
         return {...state, restaurants: action.payload}
     }else if (action.type === "GET_RES_SEARCH"){
         return {...state, restaurants: action.payload}
+    }else if(action.type === "GET_MENU"){
+        return {...state, menuList: action.payload}
     }
 
     return state

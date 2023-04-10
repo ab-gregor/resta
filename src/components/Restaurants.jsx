@@ -13,7 +13,9 @@ function Restaurants() {
     getData()
   }, [])
   const getData = async ()=>{
-    const res = await fetch("http://localhost:5000/restaurant")
+    const res = await fetch("http://localhost:5000/restaurant",{
+        method:"GET"
+    })
     const data = await res.json()
     // console.log(data)
     dispatch({
