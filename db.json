@@ -1,87 +1,88 @@
 {
-  "restaurant":[
-      {
-          "id":1,
-          "name":"Zam Zam",
-          "location":"Kazhakootam",
-          "city":"Trivandrum"
-      },
-      {
-          "id":2,
-          "name":"Thomas kutty",
-          "location":"Kazhakootam",
-          "city":"Trivandrum"
-      }
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Zam Zam",
+      "location": "Kazhakootam",
+      "city": "Trivandrum"
+    },
+    {
+      "id": 2,
+      "name": "Thomas kutty",
+      "location": "Kazhakootam",
+      "city": "Trivandrum"
+    }
   ],
   "menuList": [
-      {
+    {
       "id": 1,
       "cuisine": "CHinsese",
       "type": "non-veg",
-      "menu":[
-      {
-      "id":1,
-      "itemName":"Fried Rice",
-      "price":350
-      },
-      {
-      
-      "id":2,
-      "itemName":"Chilly Chicken",
-      "price":350
-      },
-      
-     {
-      
-      "id":3,
-     "itemName":"Ice Cream",
-      "price":350
-     }
-      
+      "menu": [
+        {
+          "id": 1,
+          "itemName": "Fried Rice",
+          "price": 350
+        },
+        {
+          "id": 2,
+          "itemName": "Chilly Chicken",
+          "price": 350
+        },
+        {
+          "id": 3,
+          "itemName": "Ice Cream",
+          "price": 350
+        }
       ]
-  },
-
-  {
+    },
+    {
       "id": 2,
       "cuisine": "Indian",
       "type": "veg",
-      "menu":[
-      {
-      "id":1,
-      "itemName":"Rice",
-      "price":350
-      },
-      {
-      
-      "id":2,
-      "itemName":"Chilly Gopi",
-      "price":350
-      },
-      
-     {
-      
-      "id":3,
-     "itemName":"Thali",
-      "price":350
-     }
-      
+      "menu": [
+        {
+          "id": 1,
+          "itemName": "Rice",
+          "price": 350
+        },
+        {
+          "id": 2,
+          "itemName": "Chilly Gopi",
+          "price": 350
+        },
+        {
+          "id": 3,
+          "itemName": "Thali",
+          "price": 350
+        }
       ]
-  }
+    }
   ],
-  "cart":[
-      {
-      "id":1,
-      "menuid":2,
-      "itemid":2,
-      "count":2,
-      "totalPrice": 250
-  },
-  {
-      "id":2,
-      "menuid":2,
-      "itemid":3,
-      "count":3,
-      "totalPrice": 300
-  }
-]
+  "cart": [
+    {
+      "id": 1,
+      "resid": 2,
+      "itemid": 3,
+      "itemName": "Thali",
+      "itemPrice": 350,
+      "count": 6
+    },
+    {
+      "resid": 2,
+      "itemid": 2,
+      "itemName": "Chilly Gopi",
+      "itemPrice": 350,
+      "count": 2,
+      "id": 2
+    },
+    {
+      "resid": 2,
+      "itemid": 1,
+      "itemName": "Rice",
+      "itemPrice": 350,
+      "count": 1,
+      "id": 3
+    }
+  ]
 }
