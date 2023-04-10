@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Restaurants from './components/Restaurants';
 import NavBarCustom from './components/NavBarCustom';
 import Carous from './components/Carous';
+import Cart from './components/Cart';
 
 
 
@@ -26,6 +27,7 @@ function App() {
 
       <Route path='/'  element={<Restaurants/>}/>
       <Route path='/menu' element={<Menu/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       
       
       </Routes>

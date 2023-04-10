@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {FaShoppingCart} from 'react-icons/fa';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useSelector, useDispatch} from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ function NavBarCustom() {
 
     const restaurants = useSelector((state)=>(state.restaurants))
     const dispatch = useDispatch()
-
+    const navigate = useNavigate();
 
     const [query, setQuery] = useState('');
 
@@ -31,6 +32,10 @@ function NavBarCustom() {
         })
     }
 
+    function cartPage(){
+        navigate('/cart')
+    }
+
   return (
     <Navbar  expand="lg">
       <Container fluid>
@@ -43,7 +48,7 @@ function NavBarCustom() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2"><FaShoppingCart/>  Cart</Nav.Link>
+            <Nav.Link href="#action2" onClick={()=>{cartPage()}}><FaShoppingCart/>  Cart</Nav.Link>
             
           </Nav>
           <Form className="d-flex">
