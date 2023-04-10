@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 function Restaurant({restaurant}) {
     const navigate = useNavigate();
-    function menuPage(e, id){
-        navigate('/menu')
+    function menuPage(id){
+        // console.log(id)
+        navigate('/menu', {state:{resId:id}})
         
       }
   return (

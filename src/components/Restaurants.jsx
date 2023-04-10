@@ -9,17 +9,19 @@ function Restaurants() {
   const dispatch = useDispatch()
 
   useEffect(()=>{
-    const getData = async ()=>{
-      const res = await fetch("http://localhost:5000/restaurant")
-      const data = await res.json()
-      // console.log(data)
-      dispatch({
-        type:"GET_RES",
-        payload: data
-      })
-    }
+    
     getData()
   }, [])
+  const getData = async ()=>{
+    const res = await fetch("http://localhost:5000/restaurant")
+    const data = await res.json()
+    // console.log(data)
+    dispatch({
+      type:"GET_RES",
+      payload: data
+    })
+  }
+
   return (
     <div>
         {restaurants.map((restaurant) =>(
