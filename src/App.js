@@ -7,18 +7,30 @@ import Restaurants from './components/Restaurants';
 import NavBarCustom from './components/NavBarCustom';
 import Carous from './components/Carous';
 
+
+
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Menu from './components/Menu';
+
 function App() {
 
   
 
   return (
+    <Router>
     <div>
       <NavBarCustom></NavBarCustom>
       <Carous></Carous>
-      <Restaurants></Restaurants>
+      <Routes>
+
+      <Route path='/'  element={<Restaurants/>}/>
+      <Route path='/menu' element={<Menu/>}/>
       
       
+      </Routes>
     </div>
+    </Router>
   );
 }
 
