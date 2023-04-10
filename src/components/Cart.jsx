@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 function Cart() {
 
     const cartItems = useSelector((state)=>(state.cartItems))
-    const menuList = useSelector((state)=>(state.menuList))
   const dispatch = useDispatch()
 
   useEffect(()=>{
@@ -23,31 +22,22 @@ function Cart() {
       payload: data
     })
   }
-  let itemVal=[];
-  const menuItems =  menuList.menu
-
-//   console.log(menuItems)
-
-  cartItems.map((cartItem)=>(
-    itemVal.push(menuItems?.filter((item)=>{
-        return item.id === cartItem.itemid
-      }))
-))
     //   console.log(itemVal)
-
-    
+    let totalPrice = 0
+    cartItems.map((cartItem)=>
+        
+        totalPrice = totalPrice + (cartItem.count * cartItem.itemPrice)
+    )
 
   return (
     <div>
         <h1>Cart</h1>
-        {itemVal.map((item)=>
-            
-            {item.map((ite)=>(
-                console.log(ite.itemName)
-                // <h2>{ite.itemName}</h2>
-                // <p>{ite.itemName}</p>
+        {cartItems.map((cartItem)=>(
+            <h2 key={cartItem.id}>{cartItem.itemName}: {cartItem.count}</h2>
         ))}
-        )}
+        <h1>{totalPrice}</h1>
+
+        
     </div>
   )
 }

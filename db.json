@@ -61,28 +61,20 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "resid": 2,
-      "itemid": 3,
-      "itemName": "Thali",
-      "itemPrice": 350,
-      "count": 6
-    },
-    {
       "resid": 2,
       "itemid": 2,
       "itemName": "Chilly Gopi",
       "itemPrice": 350,
-      "count": 2,
-      "id": 2
+      "count": 1,
+      "id": 1
     },
     {
       "resid": 2,
-      "itemid": 1,
-      "itemName": "Rice",
+      "itemid": 3,
+      "itemName": "Thali",
       "itemPrice": 350,
-      "count": 1,
-      "id": 3
+      "count": 2,
+      "id": 2
     }
   ]
 }
