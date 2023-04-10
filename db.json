@@ -72,12 +72,16 @@
       {
       "id":1,
       "menuid":2,
-      "count":2
+      "itemid":2,
+      "count":2,
+      "totalPrice": 250
   },
   {
       "id":2,
       "menuid":2,
-      "count":3
+      "itemid":3,
+      "count":3,
+      "totalPrice": 300
   }
 ]
 }

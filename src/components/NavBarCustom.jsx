@@ -16,7 +16,7 @@ function NavBarCustom() {
 
     const restaurants = useSelector((state)=>(state.restaurants))
     const dispatch = useDispatch()
-    const navigate = useNavigate();
+    
 
     const [query, setQuery] = useState('');
 
@@ -31,8 +31,10 @@ function NavBarCustom() {
             payload: result
         })
     }
+    const navigate = useNavigate();
 
     function cartPage(){
+        
         navigate('/cart')
     }
 
@@ -48,7 +50,7 @@ function NavBarCustom() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2" onClick={()=>{cartPage()}}><FaShoppingCart/>  Cart</Nav.Link>
+            <Nav.Link href="#action2" onClick={()=>{cartPage()}}><FaShoppingCart/>Cart</Nav.Link>
             
           </Nav>
           <Form className="d-flex">

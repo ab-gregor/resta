@@ -5,7 +5,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import { useEffect } from 'react';
 
 function Restaurants() {
-    const restaurants = useSelector((state)=>(state.restaurants))
+  const restaurants = useSelector((state)=>(state.restaurants))
   const dispatch = useDispatch()
 
   useEffect(()=>{

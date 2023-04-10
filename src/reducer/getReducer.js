@@ -1,7 +1,8 @@
 
 const initialState = {
     restaurants: [],
-    menuList:[]
+    menuList:[],
+    cartItems:[]
 }
 
 const getReducer = (state=initialState, action) =>{
@@ -11,6 +12,8 @@ const getReducer = (state=initialState, action) =>{
         return {...state, restaurants: action.payload}
     }else if(action.type === "GET_MENU"){
         return {...state, menuList: action.payload}
+    }else if(action.type === "GET_FROM_CART"){
+        return {...state, cartItems: action.payload}
     }
 
     return state
