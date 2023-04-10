@@ -2,6 +2,8 @@ import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import { useEffect } from 'react';
 
+import Button from 'react-bootstrap/Button';
+
 function Cart() {
 
     const cartItems = useSelector((state)=>(state.cartItems))
@@ -37,6 +39,7 @@ function Cart() {
         ))}
         <h1>{totalPrice}</h1>
 
+        <Button onClick={()=>alert("Order placed!")}>Place Order</Button>
         
     </div>
   )
