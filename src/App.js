@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <NavBarCustom></NavBarCustom>
-      {/* <Carous></Carous> */}
+      <Carous></Carous>
       <Restaurants></Restaurants>
       
       

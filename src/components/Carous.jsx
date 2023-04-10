@@ -4,9 +4,9 @@ function Carous() {
   return (
     <Carousel>
       <Carousel.Item interval={1000}>
-        <img
+        <img height={"300px"}
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sntxkpOK9B4mqSJHIgM3FqQrW7S6XxKlFcaQYRTC78aeZUw_KVWKSdQf8vnk9p4ineUk1eeK5zM&usqp=CAU&ec=48665699"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -15,9 +15,9 @@ function Carous() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
-        <img
+        <img height={"300px"}
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sntxkpOK9B4mqSJHIgM3FqQrW7S6XxKlFcaQYRTC78aeZUw_KVWKSdQf8vnk9p4ineUk1eeK5zM&usqp=CAU&ec=48665699"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -26,9 +26,9 @@ function Carous() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <img height={"300px"}
           className="d-block w-100"
-          src="https://th.bing.com/th/id/R.bfcec6d8860bcfcdec6b295aff77a5d6?rik=iIaIaX%2fvveWuGA&riu=http%3a%2f%2fi2.wp.com%2ftravel-lush.com%2fwp-content%2fuploads%2f2015%2f05%2fgado-gado-1-of-1.jpg&ehk=w9GkiLYpwv4N3GsVyGU4XqXB3W4qXSYdB%2blrWmVRxTg%3d&risl=&pid=ImgRaw&r=0"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sntxkpOK9B4mqSJHIgM3FqQrW7S6XxKlFcaQYRTC78aeZUw_KVWKSdQf8vnk9p4ineUk1eeK5zM&usqp=CAU&ec=48665699"
           alt="Third slide"
         />
         <Carousel.Caption>
