@@ -23,6 +23,7 @@ function App() {
     <div>
       <NavBarCustom></NavBarCustom>
       <Carous></Carous>
+      <div id='card-cont'>
       <Routes>
 
       <Route path='/'  element={<Restaurants/>}/>
@@ -31,6 +32,7 @@ function App() {
       
       
       </Routes>
+      </div>
     </div>
     </Router>
   );

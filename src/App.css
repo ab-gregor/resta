@@ -6,11 +6,64 @@
   height: 40vmin;
   pointer-events: none;
 }
+#root{
+  background-color: #282c34;
+  min-height: 600px;
+}
+.navbar{
+  background-color: #4aa164;
+  color: azure;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.carousel-item{
+  max-height: 300px;
+  padding: 10px;
+  
+}
+h2{
+  border-style: double;
+  border-color: aliceblue;
+  color: #4aa164;
+  font-size: small;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+h1{
+  color: aliceblue;
+}
+h2 button{
+  color: #4aa164;
+}
+#card-cont{
+  background-color: #282c34;
+}
+#card-cont :first-child{
+  
+  display: flex;
+  justify-content: center;
+}
+.card{
+  padding: 5px;
+  margin: 10px;
+  
+}
+.card-body{
+  background-color: #4aa164;
+  text-align: center;
+
+}
+.card-title,.card-text
+{
+  color: black;
+}
+h3,p{
+  color: #282c34;
 }
 
 .App-header {
