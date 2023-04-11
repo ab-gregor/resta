@@ -15,7 +15,7 @@ function Restaurant({restaurant}) {
 <>
     
      <Card style={{ width: '200px' }} onClick={()=>{menuPage(restaurant.id)}}>
-     <Card.Img variant="top" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sntxkpOK9B4mqSJHIgM3FqQrW7S6XxKlFcaQYRTC78aeZUw_KVWKSdQf8vnk9p4ineUk1eeK5zM&usqp=CAU&ec=48665699"/>
+     <Card.Img variant="top" src= {restaurant.img}/>
      <Card.Body>
        <Card.Title>{restaurant.name}</Card.Title>
        <Card.Text>

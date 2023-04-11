@@ -4,13 +4,15 @@
       "id": 1,
       "name": "Zam Zam",
       "location": "Kazhakootam",
-      "city": "Trivandrum"
+      "city": "Trivandrum",
+      "img": "https://is5-ssl.mzstatic.com/image/thumb/Purple62/v4/af/87/16/af8716fe-7099-08ab-14e7-31814d5a096a/source/512x512bb.jpg"
     },
     {
       "id": 2,
       "name": "Thomas kutty",
       "location": "Kazhakootam",
-      "city": "Trivandrum"
+      "city": "Trivandrum",
+      "img": "https://food.shophoppon.com/wp-content/themes/Hoppon/assets/img/karthika-logo_large.jpg"
     }
   ],
   "menuList": [
@@ -65,7 +67,7 @@
       "itemid": 2,
       "itemName": "Chilly Gopi",
       "itemPrice": 350,
-      "count": 1,
+      "count": 9,
       "id": 1
     },
     {
@@ -75,6 +77,14 @@
       "itemPrice": 350,
       "count": 2,
       "id": 2
+    },
+    {
+      "resid": 1,
+      "itemid": 1,
+      "itemName": "Fried Rice",
+      "itemPrice": 350,
+      "count": 2,
+      "id": 3
     }
   ]
 }
